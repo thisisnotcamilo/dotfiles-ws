@@ -1,4 +1,4 @@
-`dotfiles` for ubuntu LTS.
+`dotfiles-ws` for ubuntu LTS.
 
 ```sh
 $ stow <folder>
