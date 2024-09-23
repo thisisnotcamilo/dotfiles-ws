@@ -13,6 +13,11 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # aliases
+# os
+alias shutdown="sudo shutdown -f now"
+alias suspend="sudo systemctl suspend"
+alias reboot="sudo reboot"
+
 # vim
 alias v="nvim"
 alias vi="nvim"
