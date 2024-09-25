@@ -49,6 +49,8 @@ alias pdf="google-chrome-stable"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
 
+alias tldr="cheat -c"
+
 # neat func to calc directly on the term
 calc() { s=$(HISTTIMEFORMAT='' history 1);  # recover last command line.
      s=${s#*[ ]};                           # remove initial spaces.
