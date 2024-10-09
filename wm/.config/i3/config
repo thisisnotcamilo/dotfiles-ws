@@ -37,7 +37,7 @@ exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id systemctl --user import-environment DISPLAY
 exec_always --no-startup-id clipmenud
 
-exec_always --no-startup-id ~/.bin/setdualmon.sh
+exec_always --no-startup-id ~/.bin/set3mon.sh
 exec_always --no-startup-id ~/.bin/setxkbmap.sh
 
 exec_always --no-startup-id picom
@@ -114,8 +114,9 @@ workspace $tag6 output DisplayPort-1
 
 workspace $tag7 output DisplayPort-0
 workspace $tag8 output DisplayPort-0
-workspace $tag9 output DisplayPort-0
-workspace $tag10 output DisplayPort-0
+
+workspace $tag9 output HDMI-A-0
+workspace $tag10 output HDMI-A-0
 
 bindsym $mod+1 workspace $tag1
 bindsym $mod+2 workspace $tag2
