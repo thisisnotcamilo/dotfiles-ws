@@ -12,11 +12,17 @@ HISTFILE=~/.bash_history
 HISTSIZE=10000
 SAVEHIST=10000
 
+
 # aliases
 # os
 alias shutdown="sudo shutdown -f now"
 alias suspend="sudo systemctl suspend"
 alias reboot="sudo reboot"
+alias c="clear"
+alias '..'="cd .."
+
+alias sb="source ~/.bashrc"
+alias vb="vim ~/.bashrc"
 
 # vim
 alias v="nvim"
@@ -60,13 +66,6 @@ calc() { s=$(HISTTIMEFORMAT='' history 1);  # recover last command line.
 }
 alias +='calc #'
 
-# os
-alias c="clear"
-alias '..'="cd .."
-
-alias sb="source ~/.bashrc"
-alias vb="vim ~/.bashrc"
-
 # fzf folders
 alias cdf='cd $(fdfind --type d --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv --exclude Trash | fzf)'
 
@@ -98,6 +97,13 @@ alias air="~/.golang/bin/air"
 . /etc/profile.d/bash_completion.sh
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# fzf shell integration
+eval "$(fzf --bash)"
+
+export FZF_CTRL_R_OPTS="
+  --bind 'ctrl-r:up'
+  --bind 'ctrl-s:down'"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
