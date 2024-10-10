@@ -1,9 +1,7 @@
 [user]
 	name = thisisnotcamilo
-	email = vargasrcamilo@gmail.com
+	email = cvargas@0x7.ar
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
-[safe]
-	directory = /home/cvargas/remote/rconf.intranet.linkup.ar
